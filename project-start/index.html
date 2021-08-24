@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout Master</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <nav class="zone green">
+    <ul class="main-nav">
+      <li><a href="">About</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Our Team</a></li>
+      <li class="push"><a href="">Contacts</a></li>
+    </ul>
+  </nav>
+
+
+ 
+
+     
+    <section id="one"class="container zone "></section>
+    
+    
+  
+  <div class="zone blue grid-wrapper">
+    <div class="box zone"><img src="img/favorite.jpg" alt="" srcset=""></div>
+      
+    <section>
+      <div class="content">
+          <h2>Section One Text Block Reveal</h2>
+          <h3>Text Block Reveal On Page Scroll</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat ullam distinctio nemo nam velit vel rerum optio vitae dolor molestias deserunt minima ratione nobis id vero, aperiam harum a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestias eaque similique, nisi obcaecati veniam voluptate fugiat quas at nemo? Dicta quaerat laboriosam ad accusamus quod. Ut modi suscipit porro? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quaerat totam tempora reiciendis ducimus corrupti perspiciatis, vero odit necessitatibus aliquid dolore ad mollitia delectus ratione commodi laboriosam tenetur quisquam suscipit?</p>
+          <a href="#">READ MORE</a>
+      </div>
+  </section>
+  
+    <div class="box zone"><img src="img/server_2_2.png" alt="" srcset=""></div>
+    <div class="box zone"><img src="img/monitor_settings_2.png" alt="" srcset=""></div>
+    <div class="box zone"><img src="img/server_3.png" alt="" srcset=""></div>
+    <div class="box zone"><img src="img/data_storage_2_2.png" alt="" srcset=""></div>
+    <div class="box zone"><img src="img/monitor_coding_2.png" alt="" srcset=""></div>
+    <div class="box zone"><img src="img/desktop_analytics_2.png" alt="" srcset=""></div>
+    <div class="box zone"><img src="img/server_safe_2.png" alt="" srcset=""></div>
+
+  </div>
+
+  <div class="zone yellow">Footer</div>
+
+  <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+
+<script src="includes/scroll-out.js"></script>
+
+  <script type="text/javascript">
+
+    $(window).scroll(function(){
+        var scroll_position = $(window).scrollTop()/2;
+        $('section').css({
+            'background-position-x' : - scroll_position + 'px'
+        })       
+    })
+
+    ScrollOut ({
+            targets: 'h2,h3,p,a'
+        })
+
+</script>
+
+</body>
+</html>
